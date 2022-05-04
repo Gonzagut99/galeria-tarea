@@ -42,15 +42,64 @@
 
 
     <!--Contenido-->
-      <div class="" style=" border: 2px solid skyblue;">
-            <h1>Hola</h1>
+      <div class="container" style="border:2px solid skyblue">
+        <h1 class="text-center">Ingrese los datos a calcular</h1>
+        <br>
+        <div class="row">
+          <div class="col mcollf text-center" style="border: 2px solid black; padding-top: 1%; ">
+            <form>
+              <p><label for="numerouno">1er Número:</label></p>
+              <p><input type="number" id="numerouno" placeholder="Escribe un número" autofocus></p>           
+            </form>
+            <br>
+            <form>
+              <p><label for="numerodos">2do Número:</label></p>
+              <p><input type="number" id="numerodos" placeholder="Escribe un número"></p>           
+            </form>
+          </div>
+          <div class="col mcolrt text-center" style="border: 2px solid black; padding: 3%;">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioSuma" value="RadioSum" >
+              <label class="form-check-label" for="flexRadioSuma">
+                Suma
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioResta" value="RadioRest">
+              <label class="form-check-label" for="flexRadioResta">
+                Resta
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioMultipl" value="RadioMult">
+              <label class="form-check-label" for="flexRadioMultipl">
+                Multiplicación
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioDivision" value="RadioDiv">
+              <label class="form-check-label" for="flexRadioDivision">
+                División
+              </label>
+            </div>
+          </div>
+          
+        </div>
+        <br>
+        <button class="btn btn-lg btn-success" style="margin-left: 69%;" onclick="fnCalcular()" >Calcular</button>
+        <br>
+        <div class="row" style="padding: 3%; margin-left: 5%; margin-right: 5%;">
+          <div class="col" style="border: 2px solid black;">
+            <p>Resultado: <span id="rFinal"></span></p>
+          </div>
+        </div>
       </div>
-
+      
 
     <!--Fin Contenido-->
 
     <!--Footer-->   
-    <div class="container text-center">
+    <div class="container text-center" style="margin-top: 10%;">
         <div class="row">      
           <div class="col">
             <p>
